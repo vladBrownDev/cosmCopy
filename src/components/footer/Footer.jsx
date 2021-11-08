@@ -28,7 +28,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <iframe title ="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317.8888382545762!2d30.614110646170925!3d50.40177438789685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5bafa84d223%3A0x3b3060d176daa730!2z0JTQvdC10L_RgNC-0LLRgdC60LDRjyDQvdCw0LHQtdGA0LXQttC90LDRjywgMTQsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1635704564727!5m2!1sru!2sua" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>            </footer>
+                <iframe title ="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317.8888382545762!2d30.614110646170925!3d50.40177438789685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5bafa84d223%3A0x3b3060d176daa730!2z0JTQvdC10L_RgNC-0LLRgdC60LDRjyDQvdCw0LHQtdGA0LXQttC90LDRjywgMTQsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1635704564727!5m2!1sru!2sua" width="600" height="450" style={{border:0}} allowFullScreen="" loading="lazy"></iframe>            </footer>
             <div id="downFooter">
                 © All Rights Reserved 2021.  Сайт разработан командой из “Itifico”
             </div>

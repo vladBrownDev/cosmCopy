@@ -5,7 +5,7 @@ import InputMask from 'react-input-mask';
 import emailjs from 'emailjs-com';
 
 const RegistrationForm = () => {
-    let [inpValue, setInpValue] = useState("")
+    let [inpValue, setInpValue] = useState("+38(___)___-____")
     let [nameInpValue, setNameInpValue] = useState("")
     let [inputState, setInputState] = useState(["","Имя"])
     let [phoneState, setphoneState] = useState("")
@@ -15,8 +15,7 @@ const RegistrationForm = () => {
         }
         const sendEmail = (e) => {
             e.preventDefault();
-            const mask =  "+38(___)___-____"
-            if(nameInpValue === "" || inpValue.includes("_") || inpValue === mask) {
+            if(nameInpValue === "" || inpValue.includes("_")) {
                     e.target.reset()
                     setInputState(["error", "Неверный ввод"])
                     setphoneState("error")
