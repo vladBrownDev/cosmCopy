@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+    overflow-x: hidden;
+} 
+body {
+    background-color: #f2f5f8 !important;
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../images/header.png");
+    background-size: cover;
+    padding: 0 8vw;
+}
+#mobileAcc {
+    display: none;
+}
+nav {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#navbar {
+    font-size: 1.1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+}
+#navbar div:hover {
+    color: #5478B6;
+    cursor: pointer;
+}
+#headerMain {
+    margin-left:36.7vw;
+    margin-top:23vh;
+}
+#headerMain h1 {
+    font-weight: 300;
+    font-size: 5vw;
+    line-height: 6.09vw;
+    letter-spacing: -0.015em;
+    width: 43.54vw;
+    margin-bottom: 0;
+}
+#underHeader {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25vw;
+    line-height: 29px;
+    margin-top: 20px;
+}
+#headerMain button {
+    background: #5478B6;
+    border:none;
+    color:white;
+    margin-top: 12.68vh;
+    width: 13.3vw;
+    height: 2.9vw;
+    font-size: 1vw;
+}
+.mobile-burger {
+    background-image: url("../../images/burger-menu.png");
+    width: 6.66vw;
+    height: 6.66vw;
+    background-size: cover;
+    display: none;
+}
+#mobileLogo {
+    display: none;
+}
+
+@media screen and (max-width:920px) {
+    #mobileAcc {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw;
+        
+    }
+    nav img {
+        display: none;
+    }
+    #mobileLogo {
+        display: flex;
+    }
+    #navbar {
+        display: none;
+    }
+    nav {
+        align-items: center;
+        padding-top: 2.22vw;
+    }
+    nav img {
+        width: 11vw;
+        height: 12.7vw;
+    }
+    header {
+        padding: 0 4.44vw;
+        background-image: url("../../images/mobile-background.jpg");
+        background-size: 102%;
+        background-repeat: no-repeat;
+        height: 87vh;
+    }
+    #headerMain {
+        margin-left: 0;
+        margin-top: 8vh;
+    }
+    #headerMain h1 {
+        font-size:9.44vw;
+        width: 100%;
+        line-height: 11.4vw;
+        font-weight: normal;
+        letter-spacing: 0.0025em;
+    }
+    #headerMain #underHeader {
+        font-size: 4.44vw;
+        margin-top: 2.22vw;
+        letter-spacing: 0.0015em;
+        font-weight: normal;
+    }
+    #headerMain button {
+        margin-top: 52vh;
+        margin-left: 25.5%;
+        width: 44.44vw;
+        height: 11.11vw;
+        font-size: 3.88vw;
+        font-weight: 600;
+    }
+    #mobileAcc .accordion-button:not(.collapsed)::after {
+        background-image: url("../../images/cross.png") !important;
+        width: 6vw;
+        height: 6vw;
+        background-size: cover;
+        display: flex;
+    }
+    #mobileAcc .accordion-button::after {
+        background-image: url("../../images/burger-menu.png");
+        width: 7vw;
+        height: 6vw;
+        background-size: cover;
+    }
+    #mobileAcc .accordion-item {
+        width: 91vw;
+    }
+    #mobileAcc .accordion-button::after {
+        margin-right: 0;
+    }
+    #mobileAcc .accordion-button {
+        padding:0;
+        padding-top: 15px;
+    }
+    #mobileAcc .accordion-item:last-of-type .accordion-button.collapsed, .accordion-button:not(.collapsed) {
+        background-color: #f2f5f8 !important;
+    }
+    #mobileNav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #mobileNav div {
+        letter-spacing: 0.3vw;
+        margin-bottom: 1.2vw;
+        font-size: 3.88vw;
+    }
+    
+}
+
+@media screen and (max-width:359px) {
+    #headerMain button {
+        margin-top: 45.68vh;
+        margin-left: 25.5%;
+        width: 44.44vw;
+        height: 11.11vw;
+        font-size: 3.88vw;
+        font-weight: 600;
+    }
+}

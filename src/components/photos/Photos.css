@@ -1,0 +1,43 @@
+#photosDesc {
+    margin-top: 1.09vw
+}
+#photoSec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15.4vw;
+}
+#photoList {
+    width: 75vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#photoList img {
+    width: 20.4vw;
+    height: 20.4vw;
+    margin-bottom: 0.5vw;
+}
+.sectionDesc {
+    width: 17.91vw;
+}
+.befAf {
+    font-size: 1.55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 2.9vw;
+    text-align: right;
+    position: relative;
+    right: 3vw;
+    bottom: 0.6vw;
+}
+.befAf:nth-child(1) {
+    right: 1.2vw;
+}
+@media screen and (max-width:920px) {
+    #photoSec {
+        display: none;
+    }
+}

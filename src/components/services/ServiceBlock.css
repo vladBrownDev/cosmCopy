@@ -1,0 +1,177 @@
+#serviceBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2.8vw;
+}
+#serviceFilter {
+    width: 19.58vw;
+}
+
+#filterDesc {
+    margin-top: 1.09vw;
+    width: 19.58vw;
+}
+#filterSect h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1vw;
+    line-height: 1.5vw;
+    margin-bottom: 8px;
+    margin-top: 32px;
+    color: #1E1E1E;
+}
+#filterSect ul li {
+    font-style: normal;
+    font-size: 0.83vw;
+    line-height: 1.25vw;
+    letter-spacing: 0.005em;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 0.55vw;
+}
+#filterSect ul li:hover {
+    color:  #5478B6;
+    cursor: pointer;
+}
+.serviceList {
+    width: 63vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+#cleanFilter {
+    font-weight: 600;
+    font-size: 0.83vw;
+    line-height: 1.1vw;
+    letter-spacing: 0.005em;
+    color: #5478B6;
+    cursor: pointer;
+}
+.more {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 9.3vw;
+    margin-left: 19.58vw;
+    cursor: pointer;
+}
+.more div {
+    font-weight: 600;
+    font-size: 1.03vw;
+    line-height: 1.6vw;
+    letter-spacing: 0.004em;
+    color: #5478B6;
+}
+.more #downArr {
+    background-image: url("./serviceImages/downArrow.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 0.625vw;
+    height: 0.39vw;
+}
+.hidden {
+    display: none;
+}
+.chosen {
+    color:  #5478B6;
+}
+#mServiceBlock {
+    display: none;
+}
+@media screen and (max-width:920px) {
+    .more, #serviceBlock {
+        display: none;
+    }
+    #mServiceBlock {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8.22vh;
+
+    }
+    .mInnerSec {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4vh;
+    }
+    .headSec {
+        font-weight: 500;
+        font-size: 3.88vw;
+        letter-spacing: 0.005em;
+    }
+    .mSecDesc {
+        font-size: 3.88vw;
+        font-weight: normal;
+        letter-spacing: 0.0025em;
+        line-height: 5.83vw;
+        margin-top: 7px;
+    }
+    .mSecImg {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 91vw;
+        height: 91vw;
+        margin-top: 17px;
+    }
+    #cosmeticImg {
+        background-image: url("./serviceImages/2.png");
+    }
+    #laserImg {
+        background-image: url("./serviceImages/1.png"); 
+    }
+    #figureImg {
+        background-image: url("./serviceImages/3.png"); 
+    }
+    .mInnerSec .accordion-button {
+        background-color:#f2f5f8;
+    }
+    .mInnerSec .accordion-button:focus {
+        background-color:#f2f5f8;
+        border: 0;
+        box-shadow:none;
+    }
+    .accordion-button, .collapsed {
+        font-weight: 600;
+        font-size: 3.88vw;
+        line-height: 4.7vw;
+        letter-spacing: 0.005em;
+        color: #5478B6 !important;
+        padding: 1.3rem 0;
+        box-shadow: none !important;
+    }
+    .accordion-button::after {
+        margin-right: 34vw;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    }
+    .accordion-item {
+        background-color: #f2f5f8;
+    }
+    .accordion-body {
+        padding: 0 !important;
+    }
+    .mobileListItem {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid #C4C4C4;
+        padding:11px 0;
+        flex-wrap: wrap;
+    }
+    .mItemHead {
+        font-weight: 500;
+        font-size: 3.88vw;
+        line-height: 6.72vw;
+        letter-spacing: 0.005em;
+        color: #1E1E1E;
+    }
+    .mItemPrice {
+        font-weight: 600;
+        font-size: 3.88vw;
+        line-height: 6.72vw;
+        letter-spacing: 0.005em;
+        color: #1E1E1E;
+    }
+
+}

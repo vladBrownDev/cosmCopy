@@ -1,0 +1,79 @@
+#formSec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#error::-webkit-input-placeholder {
+    color: red;
+}
+#error {
+    border-color:red;
+}
+#formDesc {
+    margin-top:1.09vw;
+}
+
+#formSec img {
+    height:15vw;
+    width: 20.41vw;
+}
+
+#formSec form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 40vw;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.contactInp {
+    width: 34vw;
+    background-color: #F1F4F9;
+    border:none;
+    border-bottom: 1px solid #C4C4C4;
+    height: 1.8vw;
+    outline: none;
+    margin-bottom: 1.25vw;
+    font-size: 0.83vw;
+}
+
+#formBut {
+    height: 2.9vw;
+    width: 13.3vw;
+    border:none;
+    background-color: rgba(84, 120, 182, 1);
+    color: white;
+    font-weight: 600;
+    font-size: 1.03vw;
+    line-height: 1.6vw;
+    letter-spacing: 0.004em;
+
+}
+    
+@media screen and (max-width:920px) {
+    #formSec {
+        flex-direction: column;
+        margin-top: 14.4vh;
+    }
+    #formSec img {
+        display: none;
+    }
+    .contactInp {
+        width: 91.12vw;
+        height: 11vw;
+        font-size: 3.88vw;
+    }
+    #formBut {
+        margin-top: 5vh;
+        width: 44.44vw;
+        height: 11.11vw;
+        font-size: 3.88vw;
+    }
+}

@@ -1,0 +1,83 @@
+#reviewSec {
+    margin-top: 15.41vw;
+    margin-bottom: 15.41vw;
+    display: flex;
+    flex-direction: row;
+}
+#reviewList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 63vw;
+}
+#reviewSecMobile {
+    display: none;
+}
+
+@media screen and (max-width:920px) {
+    #reviewSec {
+        display: none;
+    }
+    #reviewSecMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .slick-list {
+        width: 92.22vw;
+    }
+    #reviewSecMobile {
+        margin-bottom: 22.77vw;
+    }
+    /* .leftArrow {
+        background-image: url("../../images//arrow.png");
+        display: block;
+        width: 5.55vw;
+        height: 5.55vw;
+    } */
+    .slick-slider  .slick-prev::before {
+        content: " ";
+    }
+    .slick-slider  .slick-next::before {
+        content: " ";
+    }
+    .slick-slider .slick-prev {
+        background-image: url("../../images//arrow.png");
+        transform: rotate(180deg);
+        height: 5.5vw;
+        width: 3.3vw;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        left: 70vw;
+        top: 61vw;
+        z-index: 3;
+    }
+    .slick-slider .slick-prev:focus{
+        background-image: url("../../images//arrow.png");
+        transform: rotate(180deg);
+        height: 5.5vw;
+        width: 3.3vw;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        left: 70vw;
+        top: 61vw;
+    }
+    .slick-slider .slick-next {
+        background-image: url("../../images//arrow.png");
+        height: 5.5vw;
+        width: 3.3vw;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        left: 86vw;
+        top: 63.6vw;
+    }
+    .slick-slider .slick-next:focus {
+        background-image: url("../../images//arrow.png");
+        height: 5.5vw;
+        width: 3.3vw;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        left: 86vw;
+        top: 63.6vw;
+    }
+}

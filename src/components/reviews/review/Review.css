@@ -1,0 +1,91 @@
+.reviewItem {
+    /* height: 16.25vw; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: row;
+}
+.userName div {
+    width: 13.3vw;
+}
+.userName div:nth-child(1) {
+    font-weight: 500;
+    font-size: 1.03vw;
+    line-height: 1.6vw;
+    color: #1E1E1E;
+    margin-bottom: 8px;
+}
+.userName div:nth-child(2) {
+    font-size: 0.83vw;
+    line-height: 1.25vw;
+    letter-spacing: 0.005em;
+    color: #313131;
+}
+.userInfo img {
+    height: 6.25vw;
+    width: 6.25vw;
+}
+.userName {
+    height: 6.25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0.8vw;
+}
+.reviewText {
+    width: 18.75vw ;
+    font-size: 0.83vw ;
+    margin-top: 1.25vw;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.25vw;
+    letter-spacing: 0.005em;
+    color: #313131;
+
+}
+
+@media screen and (max-width:920px) {
+    .reviewItem {
+        width: 91.22vw;
+        height: 40vh;
+    }
+    .reviewText {
+        font-size: 3.88vw;
+        line-height: 5.83vw;
+        letter-spacing: 0.0025em; 
+        width: 91vw;
+        margin-top: 1.4vh;
+    }
+    .userInfo img {
+        height: 22.22vw;
+        width: 22.22vw;
+    }
+    .slick-list {
+        height: 60vw;
+    }
+    .userName div:nth-child(1) {
+        font-size: 3.88vw;
+        line-height: 4.5vw;
+        width: 50vw;
+        font-weight: 500;
+        letter-spacing: 0.005em;
+    }
+    .userName div:nth-child(2) {
+        font-size: 3.88vw;
+        margin-top: 2.22vw;
+        letter-spacing: 0.005em;
+    }
+    .userInfo {
+        align-items: center;
+    }
+    .userName {
+        margin-left: 6.66vw;
+    }
+    
+}

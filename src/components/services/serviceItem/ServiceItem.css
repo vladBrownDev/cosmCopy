@@ -1,0 +1,37 @@
+#serviceItem {
+    width:20.4vw;
+    height: 33.8vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.875vw;
+    margin-right:0.83vw ;
+    transition: all 1s ease-in-out;
+}
+#serviceItem:nth-child(3n) {
+    margin-right: 0;
+}
+#serviceItem h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1vw;
+    line-height: 1.5vw;
+    margin-bottom: 8px;
+    margin-top: 0.83vw;
+    color: #1E1E1E;
+}
+#serviceItem img {
+    height: 20.4vw;
+    width: 20.4vw;
+}
+.serviceDesc {
+    font-size: 0.83vw;
+    line-height: 1.25vw;
+    opacity: 0.6;
+    margin-top:10px;
+}
+.price {
+    font-weight: 600;
+    font-size: 1.03vw;
+    line-height: 1.5vw;
+    color: #1E1E1E;
+}
