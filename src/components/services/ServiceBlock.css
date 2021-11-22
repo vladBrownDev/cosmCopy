@@ -46,9 +46,13 @@
     font-size: 0.83vw;
     line-height: 1.1vw;
     letter-spacing: 0.005em;
-    color: #5478B6;
     cursor: pointer;
 }
+
+#cleanFilter:hover {
+    color: #5478B6; 
+}
+
 .more {
     display: flex;
     flex-direction: row;

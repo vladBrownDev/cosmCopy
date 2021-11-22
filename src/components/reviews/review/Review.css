@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
@@ -53,14 +53,12 @@
 @media screen and (max-width:920px) {
     .reviewItem {
         width: 91.22vw;
-        height: 40vh;
     }
     .reviewText {
         font-size: 3.88vw;
         line-height: 5.83vw;
         letter-spacing: 0.0025em; 
         width: 91vw;
-        margin-top: 1.4vh;
     }
     .userInfo img {
         height: 22.22vw;

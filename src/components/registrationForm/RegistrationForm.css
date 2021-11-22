@@ -3,12 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
-#error::-webkit-input-placeholder {
-    color: red;
-}
-#error {
-    border-color:red;
-}
+
 #formDesc {
     margin-top:1.09vw;
 }
@@ -67,7 +62,7 @@
     }
     .contactInp {
         width: 91.12vw;
-        height: 11vw;
+        height: 18.5vw;
         font-size: 3.88vw;
     }
     #formBut {

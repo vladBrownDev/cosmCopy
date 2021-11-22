@@ -3,16 +3,15 @@ import { Accordion } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ServiceBlock.css'
 
-
 import ServiceItem from './serviceItem/SevriceItem';
-import pageText from "../text"
+import services from "../services"
 
 
 const ServiceBlock = () => { 
-    const allServiceList = pageText.map((el) => <ServiceItem data={el}/>)
-    const loadedServices = 6
-    const slicedList = allServiceList.slice(0,loadedServices)
-    let [filterButtons,setFilterButtons] = useState([
+    const allServiceList = services.map((el) => <ServiceItem data={el}/>)
+    const loadedServices = 6;
+    const slicedList = allServiceList.slice(0, loadedServices)
+    const [filterButtons,setFilterButtons] = useState([
         {
             text: 'Косметология',
             id: 'cosmetic',
@@ -43,7 +42,7 @@ const ServiceBlock = () => {
         setMore("hidden")
 
 
-        const currentFilterArr = pageText.filter((arrEl) => e.target.id === arrEl.type)
+        const currentFilterArr = services.filter((arrEl) => e.target.id === arrEl.type)
         const currentFilterComp = currentFilterArr.map((el) => <ServiceItem data = {el}/>)
 
         changeService(currentFilterComp)
@@ -79,7 +78,7 @@ const ServiceBlock = () => {
                     </div>
                     <div id="filterSect">
                         <h3>
-                            Фильтры:
+                            Фильтр:
                         </h3>
                         <ul>
                             {filterButtons.map(el => <li id={el.id} onClick={setFilter} className={el.activeClass}>{el.text}</li>)}
@@ -115,42 +114,13 @@ const ServiceBlock = () => {
                         <Accordion.Item eventKey="0">
                             <Accordion.Header className="moreMobile">Смотреть список услуг</Accordion.Header>
                             <Accordion.Body>
-                                  <div className="mobileListItem">
-                                      <div className="mItemHead">Комбинированная чистка</div>
-                                      <div className="mItemPrice">700 грн.</div>
-                                  </div>
-                                  <div className="mobileListItem">
-                                      <div className="mItemHead">Ультразвуковая чистка</div>
-                                      <div className="mItemPrice">200 грн.</div>
-                                  </div>
-                                  <div className="mobileListItem">
-                                      <div className="mItemHead">Массаж классический</div>
-                                      <div className="mItemPrice">300 грн.</div>
-                                  </div>
-                                  <div className="mobileListItem">
-                                      <div className="mItemHead">Карбокситерапия</div>
-                                      <div className="mItemPrice">600 грн.</div>
-                                  </div>
-                                  <div className="mobileListItem">
-                                      <div className="mItemHead">Пилинг</div>
-                                      <div className="mItemPrice">600 грн.</div>
-                                  </div>
-                                  <div className="mobileListItem">
-                                      <div className="mItemHead">Альгинатная маска для лица</div>
-                                      <div className="mItemPrice">200 грн.</div>
-                                  </div>
-                                  <div className="mobileListItem">
-                                      <div className="mItemHead">Мезотерапия</div>
-                                      <div className="mItemPrice">1400 грн.</div>
-                                  </div>
-                                  <div className="mobileListItem">
-                                      <div className="mItemHead">Уход по типу кожи</div>
-                                      <div className="mItemPrice">300 грн.</div>
-                                  </div>
-                                  <div className="mobileListItem">
-                                      <div className="mItemHead">Фотоомоложение</div>
-                                      <div className="mItemPrice">500 грн.</div>
-                                  </div>
+                                {services.filter(f => f.type == "cosmetic")
+                                    .map(p => {
+                                        return <div className="mobileListItem">
+                                            <div className="mItemHead">{p.heading}</div>
+                                            <div className="mItemPrice">{p.price}</div>
+                                        </div>
+                                })}
                             </Accordion.Body>
                         </Accordion.Item>
                     </Accordion>
@@ -169,22 +139,13 @@ const ServiceBlock = () => {
                         <Accordion.Item eventKey="0">
                             <Accordion.Header className="moreMobile">Смотреть список услуг</Accordion.Header>
                             <Accordion.Body>
-                                  <div className="mobileListItem">
-                                      <div className="mItemHead">Лазерная эпиляция лица</div>
-                                      <div className="mItemPrice">100 - 400 грн.</div>
-                                  </div>
-                                  <div className="mobileListItem">
-                                      <div className="mItemHead">Лазерная эпиляция рук</div>
-                                      <div className="mItemPrice">100 - 500 грн.</div>
-                                  </div>
-                                  <div className="mobileListItem">
-                                      <div className="mItemHead">Лазерная эпиляция ног</div>
-                                      <div className="mItemPrice">100 - 500 грн.</div>
-                                  </div>
-                                  <div className="mobileListItem">
-                                      <div className="mItemHead">Бикини полное</div>
-                                      <div className="mItemPrice">500 грн.</div>
-                                  </div>
+                                {services.filter(f => f.type == "laser")
+                                    .map(p => {
+                                        return <div className="mobileListItem">
+                                            <div className="mItemHead">{p.heading}</div>
+                                            <div className="mItemPrice">{p.price}</div>
+                                        </div>
+                                })}
                             </Accordion.Body>
                         </Accordion.Item>
                     </Accordion>
@@ -201,10 +162,13 @@ const ServiceBlock = () => {
                         <Accordion.Item eventKey="0">
                             <Accordion.Header className="moreMobile">Смотреть список услуг</Accordion.Header>
                             <Accordion.Body>
-                                  <div className="mobileListItem">
-                                      <div className="mItemHead">Коррекция фигуры по зонам</div>
-                                      <div className="mItemPrice">420 грн. за зону</div>
-                                  </div>
+                                {services.filter(f => f.type == "figure")
+                                    .map(p => {
+                                        return <div className="mobileListItem">
+                                            <div className="mItemHead">{p.heading}</div>
+                                            <div className="mItemPrice">{p.price}</div>
+                                        </div>
+                                })}
                             </Accordion.Body>
                         </Accordion.Item>
                     </Accordion>

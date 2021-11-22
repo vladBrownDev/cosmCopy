@@ -88,8 +88,6 @@ nav {
     }
     #mobileLogo {
         display: flex;
-        width: 8.05vw;
-        height: 8.88vw;
     }
     #navbar {
         display: none;

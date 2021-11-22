@@ -50,7 +50,6 @@
         background-size: 100%;
         left: 70vw;
         top: 61vw;
-        z-index: 3;
     }
     .slick-slider .slick-prev:focus{
         background-image: url("../../images//arrow.png");
