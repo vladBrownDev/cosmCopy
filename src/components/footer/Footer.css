@@ -11,32 +11,32 @@ footer {
     flex-direction: column;
 }
 #underCont {
-    font-size: 0.83vw;
+    font-size: 1.15vw;
     margin-top: 1.09vw;
 }
 #underCont div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 8px;
+    margin-bottom: 0.5vw;
 }
 .boldCont {
-    width: 6vw;
+    min-width: 10vw;
     float: left;
     font-weight: 500;
-    line-height: 1.25vw;
+    line-height: 1.5vw;
     letter-spacing: 0.005em;
     color: #000000;
 }
 .lightCont {
     width: 13.3vw;
-    line-height: 1.25vw;
+    line-height: 1.5vw;
     letter-spacing: 0.005em;
     color: #313131;
 }
 iframe {
     border: 0;
-    width: 62.5vw;
+    width: 50.5vw;
     height: 31.25vw;
 }
 #downFooter {

@@ -68,28 +68,30 @@ const RegistrationForm = () => {
             <img alt="logo" src={logo}/>
         
             <form onSubmit={formik.handleSubmit}>
-                <TextField
-                    id="name"
-                    name="name"
-                    label="Имя"
-                    variant="standard"
-                    value={formik.values.name}
-                    onChange={formik.handleChange}
-                    error={formik.touched.name && Boolean(formik.errors.name)}
-                    helperText={formik.touched.name && formik.errors.name}
-                    className="contactInp"
-                />
-                <TextField
-                    id="phone"
-                    name="phone"
-                    label="Номер телефона"
-                    variant="standard"
-                    value={formik.values.phone}
-                    onChange={formik.handleChange}
-                    error={formik.touched.phone && Boolean(formik.errors.phone)}
-                    helperText={formik.touched.phone && formik.errors.phone}
-                    className="contactInp"
-                />
+                <div id="inputShell">
+                    <TextField
+                        id="name"
+                        name="name"
+                        label="Имя"
+                        variant="standard"
+                        value={formik.values.name}
+                        onChange={formik.handleChange}
+                        error={formik.touched.name && Boolean(formik.errors.name)}
+                        helperText={formik.touched.name && formik.errors.name}
+                        className="contactInp"
+                    />
+                    <TextField
+                        id="phone"
+                        name="phone"
+                        label="Номер телефона"
+                        variant="standard"
+                        value={formik.values.phone}
+                        onChange={formik.handleChange}
+                        error={formik.touched.phone && Boolean(formik.errors.phone)}
+                        helperText={formik.touched.phone && formik.errors.phone}
+                        className="contactInp"
+                    />
+                </div>
                  <input type="submit" value="Записаться" id="formBut"/>
             </form>
             <BootstrapDialog

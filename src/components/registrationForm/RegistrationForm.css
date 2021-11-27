@@ -36,7 +36,11 @@
     height: 1.8vw;
     outline: none;
     margin-bottom: 1.25vw;
-    font-size: 0.83vw;
+    
+}
+form label {
+    font-size: 0.83vw !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 #formBut {
@@ -51,6 +55,16 @@
     letter-spacing: 0.004em;
 
 }
+#inputShell {
+    height: 5.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.css-1d1r5q-MuiFormHelperText-root {
+    font-size: 0.6vw !important;
+}
+
     
 @media screen and (max-width:920px) {
     #formSec {
@@ -63,7 +77,10 @@
     .contactInp {
         width: 91.12vw;
         height: 18.5vw;
-        font-size: 3.88vw;
+        
+    }
+    form label {
+        font-size: 3.88vw !important;
     }
     #formBut {
         margin-top: 5vh;
