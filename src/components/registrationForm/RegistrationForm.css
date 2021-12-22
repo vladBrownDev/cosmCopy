@@ -88,4 +88,7 @@ form label {
         height: 11.11vw;
         font-size: 3.88vw;
     }
+    #inputShell {
+        height: 30vw;
+    }
 }

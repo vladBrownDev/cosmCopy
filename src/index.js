@@ -8,6 +8,7 @@ import Photos from './components/photos/Photos';
 import ReviewBlock from './components/reviews/ReviewBlock'
 import RegistrationForm from './components/registrationForm/RegistrationForm'
 import Footer from './components/footer/Footer';
+import MobileFooter from "./components/mobilePhotos/MobilePhotos.jsx"
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.render(
       <ServiceBlock />
       <Photos />
       <ReviewBlock />
+      <MobileFooter/>
       <RegistrationForm />
     </main>
     <Footer />

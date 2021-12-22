@@ -61,6 +61,9 @@ const RegistrationForm = () => {
                 <div className="mainHeading">
                     Записаться
                 </div>
+                <div className='mobileHeader'>
+                    Записаться
+                </div>
                 <div className="sectionDesc" id="formDesc">
                     Заполните форму, что бы записаться на прием и мы вам перезвоним.
                 </div>

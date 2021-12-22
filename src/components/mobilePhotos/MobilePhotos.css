@@ -1,0 +1,46 @@
+#mobilePhotos {
+    display: none;
+}
+.mobileHeader {
+    display: none;
+}
+@media screen and (max-width:920px) {
+    #mobilePhotos {
+        display: flex;
+        flex-direction: column;
+    }
+    .mobileHeader {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 5.5vw;
+        margin-bottom: 2.5vw;
+        display: inline-block;
+    }
+    #smallImagesCont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2vw;
+    }
+    .smallImage {
+        width: 28.8vw;
+        height: 28.8vw;
+    }
+    .beforeAfter {
+        height: 91vw;
+    }
+    .before-after-slider__delimiter-icon {
+        background-image: url("../../images/swipe.png") !important;
+        background-size: cover !important;
+        height: 13.3vw !important;
+        width: 13.3vw !important;
+    }
+    .mSecDesc {
+        font-size: 4.5vw;
+        line-height: 6.66vw;
+        letter-spacing: 0.005em;
+        margin-bottom: 8.888vw;
+        margin-top: 0;
+    }
+}

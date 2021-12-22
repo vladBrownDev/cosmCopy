@@ -41,8 +41,8 @@ const ReviewBlock = () => {
                 </div>
             </section>
             <section id="reviewSecMobile">
-                <div className="mainHeading">
-                    Отзывы
+                <div className='mobileHeader'>
+                   Отзывы
                 </div>
                 <Slider {...settings}>
                     <div>

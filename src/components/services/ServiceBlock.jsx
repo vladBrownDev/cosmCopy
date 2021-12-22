@@ -97,9 +97,9 @@ const ServiceBlock = () => {
                 <div id="downArr"></div>
             </div>
             <section id="mServiceBlock">
-                <h1 className="mainHeading">
-                    Услуги
-                </h1>
+                    <div className='mobileHeader'>
+                        Услуги
+                    </div>
                 <div className="mInnerSec">
                     <div className="headSec">
                         Косметология
